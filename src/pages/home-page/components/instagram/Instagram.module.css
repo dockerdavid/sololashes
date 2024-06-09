@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 51, 111);
+  padding: 20px 25px;
+  gap: 20px;
+  width: 100%;
+}
+
+.titleInstagram {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 20px;
+  position: relative;
+}
+
+.instagramContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5%;
+  padding: 10px;
+}
+
+.instagramContainer img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5%;
+}
+
+@media screen and (min-width: 470px) {
+
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+}
+
+@media screen and (min-width: 580px) {
+
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+}

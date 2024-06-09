@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgb(252, 144, 75);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.gridItem {
+  display: flex;
+  position: relative;
+}
+
+.quote {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opinion {
+  position: relative;
+  z-index: 1;
+}
+
+.description {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.flexPerson {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.imgPerson {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (min-width: 580px) {
+  .container {
+    padding: 20px 30px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .container {
+    padding: 20px 50px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .subtitle {
+    font-size: 2.5rem;
+  }
+
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+
+  .flexPerson span {
+    font-size: 1.2rem;
+  }
+
+  .imgPerson {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    padding: 40px 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 40px 100px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1.4rem;
+  }
+
+  .flexPerson span {
+    font-size: 1.4rem;
+  }
+
+  .imgPerson {
+    width: 80px;
+    height: 80px;
+  }
+}

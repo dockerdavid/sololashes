@@ -1,0 +1,58 @@
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  background: rgb(255, 253, 211);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 253, 211, 1) 0%,
+    rgba(243, 238, 212, 1) 32%,
+    rgba(254, 242, 229, 1) 50%,
+    rgba(251, 225, 215, 1) 68%,
+    rgba(251, 213, 212, 1) 100%
+  );
+}
+
+.galleries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 8px;
+}
+
+.priceList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8ecee;
+}
+
+.trusted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e1f5fe;
+}
+
+.customers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
