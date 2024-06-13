@@ -1,67 +1,108 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--pink1);
-  padding: 20px 25px;
-  gap: 20px;
-  width: 100%;
+	height: 100%;
+	width: 100%;
+	padding-block: 5vh;
+	gap: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--pink1);
 }
 
 .titleInstagram {
-  color: white;
-  font-size: 2.4rem;
-  font-weight: 500;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	color: var(--white1);
+	font-size: calc(var(--unitFont) * 24);
 }
 
 .gridContainer {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 20px;
-  position: relative;
+	width: clamp(768px, 90%, 1200px);
+	height: 80%;
+	padding-inline: 3vw;
+	padding-block: 4vh;
+	margin-top: 20px;
+
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-auto-flow: row;
+	gap: 10px;
+	grid-template-areas:
+		"insta1 insta1 insta1 insta2 insta2 insta3 insta3 insta4 insta4"
+		"insta1 insta1 insta1 insta5 insta5 insta6 insta6 insta7 insta7";
+
+	background-color: var(--white1);
+}
+
+.instagramContainer:nth-child(1) {
+	grid-area: insta1;
+}
+
+.instagramContainer:nth-child(2) {
+	grid-area: insta2;
+}
+
+.instagramContainer:nth-child(3) {
+	grid-area: insta3;
+}
+
+.instagramContainer:nth-child(4) {
+	grid-area: insta4;
+}
+
+.instagramContainer:nth-child(5) {
+	grid-area: insta5;
+}
+
+.instagramContainer:nth-child(6) {
+	grid-area: insta6;
+}
+
+.instagramContainer:nth-child(7) {
+	grid-area: insta7;
 }
 
 .instagramContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  border-radius: 5%;
-  padding: 10px;
+	width: 100%;
+	height: 100%;
+  	border-radius: 10px;
+	overflow: hidden;
 }
 
 .instagramContainer img {
-  object-fit: cover;
-  width: 100%;
-  border-radius: 5%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
-@media screen and (min-width: 470px) {
-
-  .gridContainer {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.gridContainer {
+		width: 80%;
+		height: auto;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(3, 25vh);
+		grid-template-areas:
+			"insta1 insta1 insta2 insta2 insta4 insta4"
+			"insta1 insta1 insta3 insta3 insta5 insta5"
+			"insta7 insta7 insta7 insta6 insta6 insta6";
+	}
 }
 
-@media screen and (min-width: 580px) {
+/* mobiles */
+@media screen and (max-width: 768px) {
+	.container {
+		padding-bottom: 0;
+	}
 
-  .gridContainer {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-
-}
-
-@media screen and (min-width: 1000px) {
-
-  .gridContainer {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-
+	.gridContainer {
+		width: 100%;
+		height: auto;
+		padding-inline: 5vw;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 25vh);
+		grid-template-areas:
+			"insta1 insta2"
+			"insta3 insta4"
+			"insta5 insta6"
+			"insta7 .";
+	}
 }

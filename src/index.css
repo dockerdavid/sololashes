@@ -15,11 +15,25 @@
 :root {
 	--pink1: rgb(255, 51, 111);
 	--pink2: rgb(232, 97, 108);
+
+	--orange1: rgb(254, 144, 80);
+	--orange1Soft: rgba(254, 144, 80, 0.2);
+
 	--white1: #fff;
 
 	--black1: #191919;
+	--black2: #333333;
+
+	--blackSoft: rgba(0, 0, 0, 0.6);
 
 	--gray1: #666666;
+	--gray2: #dcdcdc;
+
+	--unitFont: 0.09rem;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
@@ -29,4 +43,18 @@ body {
 
 #check {
   	display: none;
+}
+
+/* tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	:root {
+		--unitFont: 0.08rem;
+	}
+}
+
+/* mobiles */
+@media screen and (max-width: 768px) {
+	:root {
+		--unitFont: 0.065rem;
+	}
 }

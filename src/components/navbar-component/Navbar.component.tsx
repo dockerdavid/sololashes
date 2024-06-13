@@ -28,22 +28,20 @@ const NavbarComponent = () => {
 
 				<ul className={`containerList ${isOpen ? "opennav" : "closenav"}`}>
 					<li>
-						<a href="#">ABOUT</a>
+						<a href="#trusted">ABOUT</a>
 					</li>
 					<li>
-						<a href="#">GALLERY</a>
+						<a href="#gallery">GALLERY</a>
 					</li>
 					<li>
 						<a href="#">CONTACT US</a>
 					</li>
 					<li className="priceListLink">
-						<a href="#">PRICE LIST</a>
+						<a href="#priceList">PRICE LIST</a>
 					</li>
 				</ul>
 
-				<button className="buttonPrice">
-					<a href="#">PRICE LIST</a>
-				</button>
+				<a href="#priceList" className="buttonPrice">PRICE LIST</a>
 			</nav>
 
 			<div className="containerContent">

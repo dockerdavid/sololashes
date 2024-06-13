@@ -1,29 +1,26 @@
 nav {
 	height: 10vh;
-	width: 100%;
+	width: clamp(768px, 90%, 1200px);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-inline: 15vw;
-
-	background: transparent;
+	padding: 2vw;
 }
 
 label.logo {
-	font-size: 30pt;
+	font-size: calc(var(--unitFont) * 30);
 	font-weight: 100;
   	color: var(--black1);
-	margin-right: 8vw;
 }
 
 .containerList {
 	display: flex;
-	gap: 2vw;
+	gap: 1vw;
 }
 
 .containerList li a {
 	color: var(--black1);
-	font-size: 12pt;
+	font-size: calc(var(--unitFont) * 12);
 	font-weight: 700;
 	padding: 10px 15px;
 	border: none;
@@ -32,12 +29,6 @@ label.logo {
 
 .priceListLink {
 	display: none;
-}
-
-a.active,
-a:hover {
-	background: none;
-	transition: 0.5s;
 }
 
 .btnMenu {
@@ -59,30 +50,24 @@ a:hover {
 	background-color: transparent;
 }
 
-.buttonPrice{
-	background-color: var(--pink2);
+.buttonPrice {
+	font-size: calc(var(--unitFont) * 12);
+	color: var(--white1);
+	font-weight: 700;
 	padding: 15px 25px;
 	text-align: center;
 
-	border: none;
-	outline: none;
+	background-color: var(--pink2);
 	cursor: pointer;
-}
-
-.buttonPrice > a {
-	font-size: 12pt;
-	color: var(--white1);
-	font-weight: 700;
 	text-decoration: none;
 }
 
 .containerContent {
+	width: clamp(768px, 90%, 1200px);
 	height: 90%;
-	width: 100%;
 	display: grid;
-	padding-inline: 15vw;
 	grid-auto-flow: column;
-	grid-template-columns: 40% 35% 25%;
+	grid-template-columns: 35% 35% 30%;
 }
 
 .containerContent > div {
@@ -99,13 +84,13 @@ a:hover {
 }
 
 .section1 h2 {
-	font-size: 42pt;
+	font-size: calc(var(--unitFont) * 42);
 	font-weight: 700;
 	color: var(--black1);
 }
 
 .section1 p {
-	font-size: 14pt;
+	font-size: calc(var(--unitFont) * 14);
 	font-weight: normal;
 	color: var(--gray1);
 }
@@ -119,7 +104,7 @@ a:hover {
 }
 
 .section1 button > a {
-	font-size: 18pt;
+	font-size: calc(var(--unitFont) * 18);
 	color: var(--white1);
 	font-weight: normal;
 	text-decoration: none;
@@ -145,7 +130,7 @@ a:hover {
 }
 
 .section3 > p {
-	font-size: 14pt;
+	font-size: calc(var(--unitFont) * 14);
 	font-weight: normal;
 	color: var(--gray1);
 }
@@ -158,7 +143,7 @@ a:hover {
 }
 
 .section3 h3 {
-	font-size: 18pt;
+	font-size: calc(var(--unitFont) * 18);
 	font-weight: 700;
 	color: var(--black1);
 }
@@ -169,13 +154,45 @@ a:hover {
 	border: 1px solid var(--black1);
 }
 
+/* tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.containerContent {
+		grid-template-columns: 50% 50%;
+	}
+
+	.section2 {
+		display: none;
+	}
+}
+
+/* mobiles */
 @media screen and (max-width: 768px) {
 	nav {
+		width: 100%;
+		padding-inline: 5vw;
+		gap: 5vw;
 		justify-content: flex-start;
 	}
 
-	label.logo {
-		margin-right: 0;
+	.containerContent {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding-inline: 8vw;
+		padding-block: 2vh 10vh;
+		gap: 10vh;
+	}
+
+	.section1 {
+		gap: 2vh;
+	}
+
+	.section2 {
+		display: none;
+	}
+
+	.section3 {
+		gap: 2vh;
 	}
 
 	.buttonPrice {
@@ -203,7 +220,7 @@ a:hover {
 		gap: 10px;
 
 		transition: all 0.5s;
-		background: rgba(0, 0, 0, 0.2);
+		background: var(--blackSoft);
 	}
 
 	.containerList li {
@@ -219,7 +236,8 @@ a:hover {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-size: 18pt;
+		color: var(--white1);
+		font-size: calc(var(--unitFont) * 18);
 	}
 
 	.closenav {

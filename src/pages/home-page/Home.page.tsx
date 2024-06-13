@@ -2,12 +2,12 @@ import { NavbarComponent } from "../../components";
 import styles from "./Home.module.css";
 
 import {
-  GalleriesComponent,
-  CustomersComponent,
-  FooterComponent,
-  InstagramComponent,
-  PriceListComponent,
-  TrustedComponent,
+	GalleriesComponent,
+	CustomersComponent,
+	FooterComponent,
+	InstagramComponent,
+	PriceListComponent,
+	TrustedComponent,
 } from "./components";
 
 const HomePage = () => {
@@ -16,13 +16,13 @@ const HomePage = () => {
 			<div className={styles.presentation}>
 				<NavbarComponent />
 			</div>
-			<div className={styles.galleries}>
+			<div id="gallery" className={styles.galleries}>
 				<GalleriesComponent />
 			</div>
-			<div className={styles.priceList}>
+			<div id="priceList" className={styles.priceList}>
 				<PriceListComponent />
 			</div>
-			<div className={styles.trusted}>
+			<div id="trusted" className={styles.trusted}>
 				<TrustedComponent />
 			</div>
 			<div className={styles.customers}>
