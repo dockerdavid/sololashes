@@ -49,7 +49,7 @@ const NavbarComponent = () => {
 					<h2>
 						Where quality meets comfort & Style
 					</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia suscipit deserunt soluta accusamus doloribus saepe.</p>
+					<p>Where quality meets comfort and style, our company specializes in aesthetics with a focus on lashes.</p>
 					<button>
 						<a href="#">Schedule a Consultation</a>
 					</button>

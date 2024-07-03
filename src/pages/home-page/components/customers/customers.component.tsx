@@ -16,16 +16,16 @@ const CustomersComponent = () => {
 					<div className={styles.opinion}>
 						<div className={styles.description}>
 							<span>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-								dictum, purus nec dapibus fermentum, sem quam semper libero,
-								sit amet adipiscing sem neque sed ipsum.
+							Working at this lash salon for a year has been incredible. The teamwork and support are amazing,
+							 and we use the best products to ensure our clients leave feeling confident and beautiful.
+							  I
 							</span>
 						</div>
 						<div className={styles.person}>
 							<img className={styles.imgPerson} src="https://via.placeholder.com/50" alt="John Doe" />
 							<div className={styles.flexPerson}>
 								<span>John Doe</span>
-								<span>CEO at Company</span>
+								<span>Eyelash Specialist</span>
 							</div>
 						</div>
 					</div>
@@ -37,16 +37,15 @@ const CustomersComponent = () => {
 					<div className={styles.opinion}>
 						<div className={styles.description}>
 							<span>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-								dictum, purus nec dapibus fermentum, sem quam semper libero,
-								sit amet adipiscing sem neque sed ipsum.
+							I enjoy working here because it lets me be creative and make clients feel great.
+							The management supports learning, and the positive atmosphere makes the job enjoyable.
 							</span>
 						</div>
 						<div className={styles.person}>
 							<img className={styles.imgPerson} src="https://via.placeholder.com/50" alt="John Doe" />
 							<div className={styles.flexPerson}>
-								<span>John Doe</span>
-								<span>CEO at Company</span>
+								<span>Ava Smith</span>
+								<span>Lash Stylist</span>
 							</div>
 						</div>
 					</div>

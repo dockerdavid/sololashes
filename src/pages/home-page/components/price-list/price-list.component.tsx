@@ -8,20 +8,20 @@ const PriceListComponent = () => {
 				<span className={styles.subtitle}>Price List</span>
 				<div className={styles.cards}>
 					<div className={styles.pricingCard}>
-						<span className={styles.kind}>Blow Dry</span>
-						<span className={styles.price}>From $23</span>
+						<span className={styles.kind}>C+Volume Natural Mixed Full Set</span>
+						<span className={styles.price}>From $149</span>
 					</div>
 					<div className={styles.pricingCard}>
-						<span className={styles.kind}>Basic Tint</span>
-						<span className={styles.price}>From $23</span>
+						<span className={styles.kind}>Volume Signature Full Set</span>
+						<span className={styles.price}>From $179</span>
 					</div>
 					<div className={styles.pricingCard}>
-						<span className={styles.kind}>Organic Color</span>
-						<span className={styles.price}>From $23</span>
+						<span className={styles.kind}>Mega Volume Lashes</span>
+						<span className={styles.price}>From $249</span>
 					</div>
 					<div className={styles.pricingCard}>
-						<span className={styles.kind}>Full Highlights</span>
-						<span className={styles.price}>From $23</span>
+						<span className={styles.kind}>LASH REMOVAL</span>
+						<span className={styles.price}>From $200</span>
 					</div>
 				</div>
 				<button className={styles.schedule}>
