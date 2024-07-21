@@ -44,3 +44,11 @@
   }
 
 }
+
+@media screen and (min-width: 1025px) {
+
+  .presentationTextContainer {
+    left: 30%;
+  }
+
+}

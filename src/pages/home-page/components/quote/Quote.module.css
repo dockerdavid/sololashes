@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 
 .quoteContainer {
@@ -51,4 +52,16 @@
   align-items: center;
   flex-direction: column;
   gap: 25px;
+}
+
+@media screen and (min-width: 769px) {
+  .quoteInformation {
+    padding: 10px 80px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .quoteInformation {
+    padding: 30px 350px;
+  }
 }

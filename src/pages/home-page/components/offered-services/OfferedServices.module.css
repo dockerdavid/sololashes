@@ -1,59 +1,94 @@
 .offeredServicesContainer {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.offeredServicesinformation {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .offeredServicesinformation {
     display: flex;
     flex-direction: column;
     width: 95%;
     height: 95%;
     gap: 28px;
     padding: 25px;
-}
-
-.offeredServicesinformation h2, span {
+  }
+  
+  .offeredServicesinformation h2, span {
     text-align: left;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
-}
-
-.offeredServicesinformation h2 {
+  }
+  
+  .offeredServicesinformation h2 {
     font-size: 2.2rem;
-}
-
-.offeredServicesinformation span {
+  }
+  
+  .offeredServicesinformation span {
     font-size: 1.3rem;
-}
-
-.offeredServicesinformation span:nth-child(2) {
+  }
+  
+  .offeredServicesinformation span:nth-child(2) {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-style: normal;
-}
-
-/* Tablets */
-
-@media screen and (min-width: 769px) {
+  }
+  
+  /* Tablets */
+  
+  @media screen and (min-width: 769px) {
     .offeredServicesContainer {
-        flex-direction: column;
-        gap: 50px;
+      flex-direction: column;
+      gap: 50px;
     }
-
+  
     .offeredServicesinformation {
-        width: 80%;
-        height: 80%;
-        gap: 50px;
+      width: 80%;
+      height: 80%;
+      gap: 50px;
     }
-
+  
     .offeredServicesinformation h2 {
-        font-size: 3rem;
+      font-size: 3rem;
     }
-
+  
     .offeredServicesinformation span {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
-}
+  }
+  
+  /* Desktops */
+  @media screen and (min-width: 1025px) {
+    .offeredServicesContainer {
+      flex-direction: row;
+      gap: 50px;
+      padding: 50px;
+    }
+  
+    .offeredServicesinformation {
+      width: 50%;
+      gap: 20px;
+    }
+  
+    .offeredServicesinformation h2 {
+      font-size: 2rem;
+    }
+  
+    .offeredServicesinformation span {
+      font-size: 1.2rem;
+    }
+  
+    .offeredServicesimage {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .offeredServicesimage img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

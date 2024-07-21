@@ -97,3 +97,13 @@ textarea::placeholder {
     align-self: center;
   }
 }
+
+@media screen and (min-width: 1025px) {
+  .contactContainer {
+    padding: 80px 20%;
+  }
+  .contactForm {
+    flex-direction: column;
+  }
+  
+}

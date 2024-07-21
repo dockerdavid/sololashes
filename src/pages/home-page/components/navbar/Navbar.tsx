@@ -23,12 +23,12 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
-        <img src="/logos/main-logo.png" alt="Logo" className={styles.logo} /> {/* Agregado el logo */}
+        <img src="/logos/main-logo.png" alt="Logo" className={styles.logo} />
         <div className={styles.menuIcon} onClick={handleShowNavbar}>
           <GrMenu size={30} />
         </div>
         <div
-          className={`${styles.navElements} ${showNav ? styles.active : ""}`}
+          className={`${styles.navElements} ${showNav ? styles.active2 : ""}`}
         >
           <ul>
             {routes.map((route) => (

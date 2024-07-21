@@ -42,6 +42,7 @@
   color: #ffffff;
   position: relative;
   z-index: 1;
+  max-width: 400px;
 }
 
 .subtitle {
@@ -54,6 +55,7 @@
   font-style: normal;
   position: relative;
   z-index: 1;
+  max-width: 800px;
 }
 
 .containerOverlay {

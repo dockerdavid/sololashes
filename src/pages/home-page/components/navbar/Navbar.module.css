@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   height: 100%;
-  justify-content: center; /* Centra los elementos en dispositivos móviles */
+  justify-content: center;
 }
 
 .menuIcon {
@@ -29,8 +29,12 @@
   overflow: hidden;
 }
 
+.active2 {
+  width: 100%;
+}
+
 .navElements.active {
-  width: 100%; /* Definimos el ancho cuando el menú está activo */
+  width: 100%;
 }
 
 .navElements ul {
@@ -74,16 +78,22 @@
 
   .navElements ul {
     flex-direction: row;
-    gap: 20px; /* Espaciado reducido para ajustar con el logo */
+    gap: 20px;
   }
 
   .logo {
     height: 65%;
     display: block;
-    margin-right: 20px; /* Espacio entre el logo y los elementos de navegación */
+    margin-right: 20px;
   }
 
   .container {
-    justify-content: space-evenly; /* Alinea los elementos a los extremos en pantallas grandes */
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .container {
+    padding: 0 50px;
   }
 }
