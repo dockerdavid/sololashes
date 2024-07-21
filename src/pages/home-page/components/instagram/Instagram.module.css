@@ -2,15 +2,15 @@
 	height: 100%;
 	width: 100%;
 	padding-block: 5vh;
-	gap: 15px;
+	gap: 5px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: var(--pink1);
+	background-color: "#ffffff";
 }
 
 .titleInstagram {
-	color: var(--white1);
+	color: "#000000";
 	font-size: calc(var(--unitFont) * 24);
 }
 
@@ -19,7 +19,6 @@
 	height: 80%;
 	padding-inline: 3vw;
 	padding-block: 4vh;
-	margin-top: 20px;
 
 	display: grid;
 	grid-template-columns: repeat(9, 1fr);

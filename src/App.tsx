@@ -4,10 +4,7 @@ import { router } from "./router";
 
 const App = () => {
   return (
-    <>
-      {/* <NavbarComponent /> */}
       <RouterProvider router={router} />
-    </>
   );
 };
 

@@ -1,101 +1,17 @@
-.presentation {
-	width: 100%;
-	height: 80vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	background: rgb(255, 253, 211);
-	background: linear-gradient(
-		90deg,
-		rgba(255, 253, 211, 1) 0%,
-		rgba(243, 238, 212, 1) 32%,
-		rgba(254, 242, 229, 1) 50%,
-		rgba(251, 225, 215, 1) 68%,
-		rgba(251, 213, 212, 1) 100%
-	);
+.madeBy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 1rem;
 }
 
-.galleries {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: var(--white1);
-}
-
-.priceList {
-	width: 100%;
-	height: 70vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: #f8ecee;
-}
-
-.trusted {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: #e1f5fe;
-}
-
-.customers {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.instagram {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.footer {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: #f8ecee;
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-	.galleries {
-		height: auto;
-	}
-
-	.priceList {
-		height: auto;
-	}
-
-	.instagram {
-		height: auto;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.presentation {
-		height: auto;
-	}
-
-	.galleries {
-		height: auto;
-	}
-
-	.priceList {
-		height: auto;
-	}
-
-	.instagram {
-		height: auto;
-	}
+.madeBy a {
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }

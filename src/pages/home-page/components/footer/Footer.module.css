@@ -1,117 +1,19 @@
-.container {
-	width: clamp(768px, 90%, 1200px);
-	height: 50vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-	text-align: center;
-	position: relative;
+.footerContainer {
+  width: 100%;
+  background-color: #8f8f8f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  text-align: center;
+  gap: 15px;
 }
 
-.title {
-	font-size: calc(var(--unitFont) * 30);
-	font-weight: 100;
-	color: var(--black1);
-}
-
-.paragraph {
-	width: 70%;
-	font-size: calc(var(--unitFont) * 14);
-	font-weight: normal;
-	color: var(--gray1);
-}
-
-.gridContainer {
-	width: 100%;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-	padding-inline: 20px;
-}
-
-.gridItem {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 10px;
-}
-
-.gridItem > span:first-of-type {
-	font-size: calc(var(--unitFont) * 18);
-	font-weight: 700;
-	color: var(--black1);
-}
-
-.gridItem > span:last-of-type {
-	font-size: calc(var(--unitFont) * 11);
-	font-weight: normal;
-	color: var(--gray1);
-}
-
-.location {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border-radius: 100%;
-	padding: 10px;
-	background-color: var(--orange1Soft);
-}
-
-.footerLine {
-	height: 1px;
-	width: 100%;
-	border: 1px solid var(--gray2);
-}
-
-.copyright {
-	position: absolute;
-	bottom: 20px;
-	left: 0;
-	font-size: calc(var(--unitFont) * 11);
-	color: var(--gray1);
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-	.container {
-		width: 100%;
-		height: auto;
-		padding-block: 5vh;
-		gap: 30px;
-	}
-
-	.gridContainer {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		gap: 30px;
-	}
-
-	.copyright {
-		left: 5vw;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.container {
-		width: 100%;
-		height: auto;
-		padding-block: 5vh;
-		gap: 30px;
-	}
-
-	.gridContainer {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		gap: 30px;
-	}
-
-	.copyright {
-		left: 5vw;
-	}
+.contactPart {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
 }

@@ -1,0 +1,72 @@
+.containerServices {
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  /* Apply grayscale filter to the background */
+  filter: grayscale(40%);
+  position: relative;
+}
+
+.text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+  /* Ensure text is above the container background */
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  position: relative;
+  z-index: 1;
+}
+
+.containerOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: Add a dark overlay to increase text contrast */
+  z-index: 0;
+}
