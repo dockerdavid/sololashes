@@ -1,94 +1,143 @@
 .offeredServicesContainer {
     display: flex;
+	flex-direction: column-reverse;
     width: 100%;
     align-items: center;
     justify-content: center;
-  }
-  
-  .offeredServicesinformation {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    height: 95%;
-    gap: 28px;
-    padding: 25px;
-  }
-  
-  .offeredServicesinformation h2, span {
-    text-align: left;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .offeredServicesinformation h2 {
-    font-size: 2.2rem;
-  }
-  
-  .offeredServicesinformation span {
-    font-size: 1.3rem;
-  }
-  
-  .offeredServicesinformation span:nth-child(2) {
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
-  
-  /* Tablets */
-  
-  @media screen and (min-width: 769px) {
-    .offeredServicesContainer {
-      flex-direction: column;
-      gap: 50px;
-    }
-  
-    .offeredServicesinformation {
-      width: 80%;
-      height: 80%;
-      gap: 50px;
-    }
-  
-    .offeredServicesinformation h2 {
-      font-size: 3rem;
-    }
-  
-    .offeredServicesinformation span {
-      font-size: 1.5rem;
-    }
-  }
-  
-  /* Desktops */
-  @media screen and (min-width: 1025px) {
-    .offeredServicesContainer {
-      flex-direction: row;
-      gap: 50px;
-      padding: 50px;
-    }
-  
-    .offeredServicesinformation {
-      width: 50%;
-      gap: 20px;
-    }
-  
-    .offeredServicesinformation h2 {
-      font-size: 2rem;
-    }
-  
-    .offeredServicesinformation span {
-      font-size: 1.2rem;
-    }
-  
-    .offeredServicesimage {
-      width: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .offeredServicesimage img {
-      width: 100%;
-      height: auto;
-    }
-  }
-  
+	padding-block: 40px;
+	padding-inline: 10px;
+	gap: 10px;
+}
+
+.offeredServicesinformation {
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	height: 95%;
+	padding: 25px;
+	gap: 15px;
+	z-index: 1;
+}
+
+.offeredServicesinformation h2, span {
+	text-align: left;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.offeredServicesinformation h2 {
+	font-size: 2.2rem;
+}
+
+.offeredServicesinformation span {
+	font-size: 1.3rem;
+}
+
+.offeredServicesinformation span:nth-child(2) {
+	font-family: "Dancing Script", cursive;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+.offeredServicesimage {
+	height: 20vh;
+	aspect-ratio: 1.5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 5px solid white;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+
+	z-index: 2;
+}
+
+.offeredServicesimage img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.offeredServicesContainerOdd .offeredServicesinformation {
+	border: 5px solid gray;
+}
+
+.offeredServicesContainerEven .offeredServicesinformation {
+	border: 5px solid white;
+}
+
+.offeredServicesContainerOdd .offeredServicesimage {
+	transform: none;
+}
+
+.offeredServicesContainerEven .offeredServicesimage {
+	transform: none;
+}
+
+
+/* Tablets */
+@media screen and (min-width: 769px) {
+	.offeredServicesContainer {
+		flex-direction: row;
+		padding-inline: 40px;
+	}
+
+	.offeredServicesinformation {
+		gap: 20px;
+		padding: 40px;
+	}
+
+	.offeredServicesinformation h2 {
+		font-size: 3rem;
+	}
+
+	.offeredServicesinformation span {
+		font-size: 1.5rem;
+	}
+
+	.offeredServicesimage {
+		height: 25vh;
+		aspect-ratio: 1.5;
+
+		z-index: 2;
+	}
+
+	.offeredServicesimage img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.offeredServicesContainerOdd {
+		flex-direction: row-reverse !important;
+	}
+
+	.offeredServicesContainerOdd .offeredServicesimage {
+		transform: translateX(35px);
+	}
+
+	.offeredServicesContainerEven .offeredServicesimage {
+		transform: translateX(-35px);
+	}
+}
+
+/* Desktops */
+@media screen and (min-width: 1025px) {
+	.offeredServicesContainer {
+		flex-direction: row;
+		padding: 50px;
+	}
+
+	.offeredServicesinformation {
+		width: min(50%, 500px);
+		gap: 20px;
+		padding: 40px;
+	}
+
+	.offeredServicesinformation h2 {
+		font-size: 2rem;
+	}
+
+	.offeredServicesinformation span {
+		font-size: 1.2rem;
+	}
+}
