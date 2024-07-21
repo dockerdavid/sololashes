@@ -102,8 +102,4 @@ textarea::placeholder {
   .contactContainer {
     padding: 80px 20%;
   }
-  .contactForm {
-    flex-direction: column;
-  }
-  
 }
