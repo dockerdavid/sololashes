@@ -34,3 +34,13 @@
   font-weight: 200;
   font-style: normal;
 }
+
+/* Tablet */
+
+@media screen and (min-width: 769px) {
+
+  .presentationTextContainer {
+    left: 20%;
+  }
+
+}

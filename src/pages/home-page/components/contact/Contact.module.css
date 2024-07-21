@@ -1,81 +1,99 @@
 .contactContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.contactContainer h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contactDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contactDescription span {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contactForm input,
+textarea {
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+  padding: 10px 5px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.contactForm input::placeholder,
+textarea::placeholder {
+  text-align: left;
+}
+
+.namesContainer {
+  display: flex;
+  gap: 20px; /* Puedes ajustar el espacio entre los campos según sea necesario */
+  flex-wrap: wrap;
+}
+
+.namesContainer input {
+  flex: 1 1 45%; /* Los campos ocuparán al menos el 45% del contenedor pero se ajustarán si hay más espacio */
+  min-width: 150px; /* Ajusta esto según sea necesario para el mínimo ancho de los campos */
+}
+
+.contactForm button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.contactForm button:hover {
+  background-color: #333;
+}
+
+@media screen and (min-width: 769px) {
+  .contactContainer {
+    padding: 40px;
   }
-  
-  .contactContainer h2 {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .contactDescription {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .contactDescription span {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
+
   .contactForm {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    flex-direction: row;
   }
-  
+
   .contactForm input,
   textarea {
-    border: none;
-    border-bottom: 1px solid #000;
-    border-radius: 0;
-    padding: 10px 5px;
-    width: 100%;
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
+    width: 45%;
   }
-  
-  .contactForm input::placeholder,
-  textarea::placeholder {
-    text-align: left;
-  }
-  
-  .namesContainer {
-    display: flex;
-    gap: 20px; /* Puedes ajustar el espacio entre los campos según sea necesario */
-    flex-wrap: wrap;
-  }
-  
-  .namesContainer input {
-    flex: 1 1 45%; /* Los campos ocuparán al menos el 45% del contenedor pero se ajustarán si hay más espacio */
-    min-width: 150px; /* Ajusta esto según sea necesario para el mínimo ancho de los campos */
-  }
-  
+
   .contactForm button {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    cursor: pointer;
-    align-self: flex-start;
+    align-self: center;
   }
-  
-  .contactForm button:hover {
-    background-color: #333;
-  }
-  
+}

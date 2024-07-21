@@ -11,17 +11,36 @@
   display: flex;
   align-items: center;
   height: 100%;
-  justify-content: center;
+  justify-content: center; /* Centra los elementos en dispositivos móviles */
 }
 
 .menuIcon {
-  display: none;
+  display: block;
+  cursor: pointer;
+}
+
+.navElements {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  background-color: #fff;
+  width: 0;
+  transition: all 0.3s ease-in;
+  overflow: hidden;
+}
+
+.navElements.active {
+  width: 100%; /* Definimos el ancho cuando el menú está activo */
 }
 
 .navElements ul {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   list-style-type: none;
-  gap: 55px;
+  margin: 15px 0;
+  gap: 20px;
 }
 
 .navElements ul a {
@@ -38,32 +57,33 @@
   color: #2f234f;
 }
 
-@media screen and (max-width: 559px) {
+.logo {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
   .menuIcon {
-    display: block;
-    cursor: pointer;
+    display: none;
   }
 
   .navElements {
-    position: absolute;
-    right: 0;
-    top: 60px;
-    background-color: #fff;
-    width: 0px;
-    transition: all 0.3s ease-in;
-    overflow: hidden;
-  }
-
-  .active {
-    width: 100%;
+    position: static;
+    width: auto;
+    overflow: visible;
   }
 
   .navElements ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 15px 0;
-    gap: 20px;
+    flex-direction: row;
+    gap: 20px; /* Espaciado reducido para ajustar con el logo */
+  }
+
+  .logo {
+    height: 65%;
+    display: block;
+    margin-right: 20px; /* Espacio entre el logo y los elementos de navegación */
+  }
+
+  .container {
+    justify-content: space-evenly; /* Alinea los elementos a los extremos en pantallas grandes */
   }
 }

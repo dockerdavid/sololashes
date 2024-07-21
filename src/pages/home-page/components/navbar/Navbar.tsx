@@ -1,7 +1,5 @@
 import { useState } from "react";
-
 import { GrMenu } from "react-icons/gr";
-
 import styles from "./Navbar.module.css";
 
 export const Navbar = () => {
@@ -25,6 +23,7 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
+        <img src="/logos/main-logo.png" alt="Logo" className={styles.logo} /> {/* Agregado el logo */}
         <div className={styles.menuIcon} onClick={handleShowNavbar}>
           <GrMenu size={30} />
         </div>
