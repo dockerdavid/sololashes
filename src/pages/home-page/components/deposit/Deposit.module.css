@@ -37,6 +37,7 @@
 .imgDeposit {
   max-width: 381px;
   max-height: 450px;
+  padding: 20px;
 }
 
 .imageDepositContainer {
@@ -50,8 +51,6 @@
 .imageDepositContainer img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
-  transform: scale(1.2);
 }
 
 .textDepositContainer {

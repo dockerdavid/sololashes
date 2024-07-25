@@ -4,8 +4,8 @@ import styles from "./Navbar.module.css";
 
 export const Navbar = () => {
   const routes = [
-    { path: "services", name: "Services" },
     { path: "about-us", name: "About us" },
+    { path: "services", name: "Services" },
     { path: "contact-us", name: "Contact us" },
   ];
 
@@ -38,6 +38,7 @@ export const Navbar = () => {
                     handleActiveRoute(route.path);
                     handleShowNavbar();
                   }}
+                  href={`#${route.path}`}
                   className={activeRoute === route.path ? styles.active : ""}
                 >
                   {route.name}

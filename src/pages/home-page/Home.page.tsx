@@ -19,16 +19,25 @@ const HomePage = () => {
       <Slider />
       <Deposit />
       <ServicesComponent
-        image="/services/services.jpeg"
+        id="about-us"
+        image="/services/1.jpeg"
         text="Our Story"
         title="Will Take Care of You."
-        subtitle="Orlando Lash Lady is known for her customized design and detailed work. She founded her business with one goal in mind – to make lash treatments effective, safe, and affordable for every woman and man. Her Lash Extensions Services focuses on safety, beauty, and quality results. Ready to embark on a beautiful journey?"
+        subtitle="Angie's journey has been marked by resilience and perseverance. From overcoming language barriers and driving anxieties to raising two children and navigating a divorce seven years ago, her experiences have shaped her into a master of her craft. Honesty and integrity have become her guiding principles. She is transparent with her clients, ensuring she can meet their expectations. For example, Angie once advised a client to postpone a three-hour session because her lashes were too damaged for the desired mega volume look, refunding the session fee to uphold her commitment to quality.  Angie Salomeʼs story is one of dedication, continual self-improvement, and a deep commitment to her clients' satisfaction. Her personal journey not only highlights her professional expertise but also showcases the authenticity and care she brings to her renowned lash extension services."
       />
       <Quote />
-      <ServicesComponent image="/services/services.jpeg" text="SERVICES" />
+      <ServicesComponent
+        image="/services/1.jpeg"
+        text="SERVICES"
+        id="services"
+      />
       <OfferedServices />
       <Instagram />
-      <ServicesComponent image="/services/services.jpeg" text="CONTACT US" />
+      <ServicesComponent
+        image="/services/1.jpeg"
+        text="CONTACT US"
+        id="contact-us"
+      />
       <Contact />
       <Footer />
       <div className={styles.madeBy}>
