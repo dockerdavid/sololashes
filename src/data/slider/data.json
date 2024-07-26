@@ -1,18 +1,18 @@
 {
   "images": [
     {
-      "image": "/slider/1.jpg",
+      "image": "/slider/1.jpeg",
       "text": "Natural Lash Lift Treatment",
       "subtitle": "The Difference You're Looking For"
     },
     {
-      "image": "/slider/1.jpg",
+      "image": "/slider/2.jpeg",
       "text": "Classic Lash Extensions",
       "subtitle": "Glamourous Mascara Effect"
     },
     {
-      "image": "/slider/1.jpg",
-      "text": "Natural Lash Lift Treatment",
+      "image": "/slider/3.jpeg",
+      "text": "Volume Lash Extensions",
       "subtitle": "2D/3D/4D..."
     }
   ]
